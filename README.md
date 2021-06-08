@@ -12,10 +12,10 @@ $ git clone https://github.com/Leon-Mbegera/re-former.git
 $ cd re-former
 ```
 2. Install required gem files, excluding gem to run production.
-`bundle install --without production
+`bundle install --without production`
 
 3. Migrate the database
-`rails db:migrate
+`rails db:migrate`
 
 ## Deploying
 - To deploy this form application, you’ll need to create a new Heroku application, switch to the right branch, push up the source, run the migrations, and seed the database with sample users:
