@@ -22,7 +22,12 @@
 <% end %>
 -->
 
-<%= form_with model: @user do |form|%>
+<%=form_with model: @user do |form|%>
+<ul>
+  <%form.object.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+  <% end %>
+</ul>
   <%= form.label :username, "Your user name here:"%> <br>
   <%= form.text_field :username %> <br><br>
   <%= form.label :email, "Email:"%> <br>
